@@ -1,0 +1,47 @@
+
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/3d-geometric-shapes-indoors-background.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.hero-btn {
+  padding: 10px 20px; /* Adjusts the size of the button */
+  background-color: var(--button-primary); /* Background color */
+  color: #ffffff; /* Text color */
+  border: none; /* Removes the border */
+  border-radius: 20px; /* Rounds the corners */
+  font-size: 16px; /* Adjusts the font size */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color on hover */
+}
+.hero-btn:hover {
+  background-color: var(--button-primary-hover); /* Darker shade on hover for visual feedback */
+}
+.hero-btn-2 {
+  padding: 10px 20px; /* Adjusts the size of the button */
+  background-color: #4663a5; /* Background color */
+  color: #ffffff; /* Text color */
+  border: none; /* Removes the border */
+  border-radius: 20px; /* Rounds the corners */
+  font-size: 16px; /* Adjusts the font size */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color on hover */
+}
+
+
