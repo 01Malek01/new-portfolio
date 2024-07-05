@@ -14,7 +14,7 @@ function Contact() {
           </div>
           <div className="contact-item flex items-center space-x-4">
             <FaEnvelope className="text-slate-200 text-2xl" />
-            <Link href="mailto:malekmostafa0051@gmail.com" className="text-slate-200 text-xl link">malekmostafa0051@gmail.com</Link>
+            <Link href="mailto:malekmostafa0051@gmail.com" className="text-slate-200 text-xl link">Gmail</Link>
           </div>
           <div className="contact-item flex items-center space-x-4">
             <FaLinkedin className="text-slate-200 text-2xl" />

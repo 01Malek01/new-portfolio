@@ -6,17 +6,11 @@ import { SiTailwindcss, SiNextdotjs, SiExpress, SiMongodb, SiMongoose } from 're
 import '../styles/Slider.css';
 // Additional Swiper modules if needed
 import { Autoplay } from 'swiper/modules';
-import SwiperCore, { Navigation, Pagination, Scrollbar } from 'swiper';
 
 // Install modules
-SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
 const MySwiperComponent = () => {
- const [activeIndex, setActiveIndex] = useState(0);
 
- const handleSlideChange = (swiper) => {
-  setActiveIndex(swiper.activeIndex);
- };
 
  return (
 
@@ -42,7 +36,6 @@ const MySwiperComponent = () => {
    
    spaceBetween={20}
    pagination={{ clickable: true }}
-   onSlideChange={handleSlideChange}
   >
    <div className='flex justify-center right-0'>
     <SlideNextButton />
