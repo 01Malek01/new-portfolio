@@ -2,15 +2,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "@/styles/Hero.css";
+import BlurIn from "./magicui/blur-in";
 
 function Hero() {
   return (
     <section className="hero-wrapper relative h-[70vh] flex items-center justify-center">
+      <BlurIn word={"Hello World"}></BlurIn>
+
       <motion.div
-      initial={{  opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 2.5 }}
-      className="hero-container  glass h-[80vh] relative flex flex-col items-center justify-center gap-1">
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2.5 }}
+        className="hero-container  glass h-[80vh] relative flex flex-col items-center justify-center gap-1">
 
         <motion.div
           initial={{ translateY: -100, opacity: 0 }}
@@ -51,7 +54,7 @@ function Hero() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 2}}
+            transition={{ duration: 2 }}
             viewport={{ once: true }}
             className="hero-btn-container md:mt-10 "
           >
